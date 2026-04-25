@@ -121,4 +121,4 @@ Steady-state duty cycle visible at ~0.6–1.0 s range, confirming the PI control
 
 ## Context
 
-Built as part of an embedded systems and power electronics coursework at ISIMG (Institut Supérieur de l'Informatique et de Mathématiques de Monastir, Gabès).
+Built as part of an embedded systems and power electronics coursework at ISIMG institut Supérieur d'Informatique et de Multimédia de Gabès

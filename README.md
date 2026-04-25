@@ -94,22 +94,27 @@ Scopes log: PV voltage (V_PV), PV current (I_PV), output voltage, and duty cycle
 Simulation run at 1000 W/m², 25°C, 1 second stop time.
 
 **Model diagram**  
-![Model](results/model.png)
+<img width="1366" height="728" alt="model" src="https://github.com/user-attachments/assets/f474fdec-e425-4eb9-b99e-69127ae734fb" />
+
 
 **V_PV and I_PV convergence (Scope3)**  
-![V and I](results/scope3_vi.png)  
+<img width="565" height="509" alt="scope3_vi" src="https://github.com/user-attachments/assets/5a8ea56c-236f-4b24-a7ee-771014b60445" />
+
 V_PV (orange) converges to ~350 V and I_PV (blue) stabilizes around 290–300 A within ~0.05 s. The yellow trace shows the MPPT voltage reference tracking.
 
 **Output voltage and current (Scope)**  
-![Output](results/scope_output.png)  
+<img width="1366" height="729" alt="scope_output" src="https://github.com/user-attachments/assets/4295ea27-7e17-484d-b138-0dba2c9e56bc" />
+
 Output voltage (yellow) reaches ~448 V with fast transient response. Output current (blue) stabilizes around 225 A. The boost converter steps up from the array MPP voltage successfully.
 
 **Power (Scope2)**  
-![Power](results/scope2_power.png)  
+<img width="883" height="717" alt="scope2_power" src="https://github.com/user-attachments/assets/dce5abc0-f9bf-43d9-b2db-431609d9db1f" />
+  
 Array power converges to ~9.15–9.9 ×10⁴ W (~91–99 kW) during the MPPT search phase before settling.
 
 **PWM duty cycle (Scope1)**  
-![PWM](results/scope1_pwm.png)  
+<img width="1366" height="729" alt="scope1_pwm" src="https://github.com/user-attachments/assets/c8878777-568a-41bf-9426-ad0c1334d965" />
+
 Steady-state duty cycle visible at ~0.6–1.0 s range, confirming the PI controller has locked onto the correct operating point.
 
 ---

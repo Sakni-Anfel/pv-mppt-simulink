@@ -91,10 +91,26 @@ Scopes log: PV voltage (V_PV), PV current (I_PV), output voltage, and duty cycle
 
 ## Results
 
-The MPPT algorithm converges to the maximum power point within a few simulation time steps across all irradiance levels. The PI controller maintains the output voltage close to the reference with minimal steady-state error.
+Simulation run at 1000 W/m², 25°C, 1 second stop time.
 
-> Add your own screenshots of the Scope outputs here after running the simulation.  
-> Example: P-V curve at 1000 W/m², transient response during irradiance step from 1000 → 500 W/m²
+**Model diagram**  
+![Model](results/model.png)
+
+**V_PV and I_PV convergence (Scope3)**  
+![V and I](results/scope3_vi.png)  
+V_PV (orange) converges to ~350 V and I_PV (blue) stabilizes around 290–300 A within ~0.05 s. The yellow trace shows the MPPT voltage reference tracking.
+
+**Output voltage and current (Scope)**  
+![Output](results/scope_output.png)  
+Output voltage (yellow) reaches ~448 V with fast transient response. Output current (blue) stabilizes around 225 A. The boost converter steps up from the array MPP voltage successfully.
+
+**Power (Scope2)**  
+![Power](results/scope2_power.png)  
+Array power converges to ~9.15–9.9 ×10⁴ W (~91–99 kW) during the MPPT search phase before settling.
+
+**PWM duty cycle (Scope1)**  
+![PWM](results/scope1_pwm.png)  
+Steady-state duty cycle visible at ~0.6–1.0 s range, confirming the PI controller has locked onto the correct operating point.
 
 ---
 
